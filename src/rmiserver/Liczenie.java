@@ -190,8 +190,7 @@ public class Liczenie {
                 if (tab[i] != 0.0)
                 zapis.println(tab[i] + " ");
                 text = text+tab[i]+" ";
-                
-            }
+                     }
             this.przepisz();
         }
         zapis.close();
