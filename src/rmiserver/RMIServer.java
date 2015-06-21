@@ -32,7 +32,7 @@ public class RMIServer extends UnicastRemoteObject implements RMII {
     }
 
 
-    public double[] zapisDanych(int ilosc, String text, String text1) throws RemoteException {
+    public double[] zapisDanych(int ilosc, String [] text, String text1) throws RemoteException {
 
         Scanner odczyt = new Scanner(System.in);
 
@@ -40,7 +40,7 @@ public class RMIServer extends UnicastRemoteObject implements RMII {
 
         for (int i = 0; i < ilosc; i++) {
 
-            lista.add(i, new Roleta(Double.parseDouble(text), Double.parseDouble(text1), "Jasny Brąz"));
+            lista.add(i, new Roleta(Double.parseDouble(text[i]), Double.parseDouble(text1), "Jasny Brąz"));
             tab[i] = lista.get(i).getWidth();
 
         }

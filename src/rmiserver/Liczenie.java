@@ -151,7 +151,7 @@ public class Liczenie {
                 System.out.println("Wariant opcjonalny" + licz);
                 System.out.println(this.wariant2(waga, pocz).replace(" 0.0", " "));
                 zapis.println("Wariant opcjonalny: \n"+this.wariant2(waga, pocz).replace(" 0.0", " "));
-                text = text + "Wariant opcjonalny: \n"+this.wariant2(waga, pocz).replace(" 0.0", " ");
+                text = text + "\nWariant opcjonalny: \n"+this.wariant2(waga, pocz).replace(" 0.0", " ");
                 this.przepisz();
                 break;               
             }
@@ -161,7 +161,7 @@ public class Liczenie {
                 System.out.println("Wariant opcjonalny: ");
                 System.out.println(this.wariant2(waga, pocz).replace(" 0.0", " "));
                 zapis.println("Wariant opcjonalny: \n"+this.wariant2(waga, pocz).replace(" 0.0", " "));
-                text = text + "Wariant opcjonalny: \n"+this.wariant2(waga, pocz).replace(" 0.0", " ");
+                text = text + "\nWariant opcjonalny: \n"+this.wariant2(waga, pocz).replace(" 0.0", " ");
                 this.przepisz();
                                
             }
@@ -187,9 +187,9 @@ public class Liczenie {
 
                 if (tab[i] != 0.0)
                 System.out.print(tab[i] + " ");
-                if (tab[i] != 0.0)
+                if (tab[i] != 0.0){
                 zapis.println(tab[i] + " ");
-                text = text+tab[i]+" ";
+                text = text+tab[i]+" ";}
                      }
             this.przepisz();
         }
